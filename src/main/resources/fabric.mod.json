@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "unfairmod",
+	"version": "${version}",
+	"name": "Unfair mod",
+	"description": "Adds unfair advantages to the client",
+	"authors": [
+		"Seynox"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Seynox/UnfairMod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/unfairmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "fr.seynox.ExampleMod"
+		],
+		"client": [
+          "fr.seynox.ExampleModClient"
+		]
+	},
+	"mixins": [
+		"unfairmod.mixins.json",
+		{
+			"config": "unfairmod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
