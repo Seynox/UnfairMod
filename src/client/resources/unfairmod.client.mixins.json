@@ -1,9 +1,8 @@
 {
 	"required": true,
-	"package": "fr.seynox.mixin.client",
+	"package": "fr.seynox.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
-      "fr.seynox.mixin.client.ExampleClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

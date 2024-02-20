@@ -3,7 +3,6 @@
 	"package": "fr.seynox.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-      "fr.seynox.mixin.ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
