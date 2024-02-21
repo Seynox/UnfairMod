@@ -1,9 +1,6 @@
 package fr.seynox;
 
-import fr.seynox.advantages.Advantage;
-import fr.seynox.advantages.Flying;
-import fr.seynox.advantages.NoFall;
-import fr.seynox.advantages.Teleport;
+import fr.seynox.advantages.*;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
@@ -22,7 +19,7 @@ public class UnfairMod implements ClientModInitializer {
 	private static final Logger LOGGER = LoggerFactory.getLogger("unfairmod");
 
 	private final List<Advantage> enabledAdvantages = List.of(
-		new Flying(), new Teleport(), new NoFall()
+		new Flying(), new Teleport(), new NoFall(), new VisualSneak()
 	);
 
 	@Override

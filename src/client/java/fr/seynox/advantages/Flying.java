@@ -38,6 +38,7 @@ public class Flying implements Advantage {
     private void toggleFly(ClientPlayerEntity player) {
         isFlying = !isFlying;
         player.setNoGravity(isFlying);
+        NoFall.setEnabled(isFlying);
 
         String message = "Flying %s".formatted(isFlying ? "enabled" : "disabled");
         player.sendMessage(Text.literal(message), true);
