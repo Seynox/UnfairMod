@@ -2,6 +2,7 @@ package fr.seynox;
 
 import fr.seynox.advantages.Advantage;
 import fr.seynox.advantages.Flying;
+import fr.seynox.advantages.NoFall;
 import fr.seynox.advantages.Teleport;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
@@ -21,7 +22,7 @@ public class UnfairMod implements ClientModInitializer {
 	private static final Logger LOGGER = LoggerFactory.getLogger("unfairmod");
 
 	private final List<Advantage> enabledAdvantages = List.of(
-		new Flying(), new Teleport()
+		new Flying(), new Teleport(), new NoFall()
 	);
 
 	@Override
